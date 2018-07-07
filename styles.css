@@ -1,0 +1,414 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+.bkg {
+    -webkit-animation:zoom 30s infinite;
+    animation:zoom 30s infinite;
+    background:url("code.jpg") center center fixed no-repeat;
+    display: inline-block;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+@-webkit-keyframes zoom{
+    0%,100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+}
+
+@keyframes zoom{
+    0%, 100%{
+        background-size:100%;
+    }
+    50%{
+        background-size:125%;
+    }
+}
+
+.bkg:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.5);
+}
+
+h1 {
+    display: inline-block;
+    font-size: 4.5vw;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3.5vw;
+    color: white;
+    margin-top: -1%;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.main {
+    display: inline-block;
+    width: 50%;
+    margin-left: 25vw;
+    margin-top: 33vh;
+    text-align: center;
+}
+
+.main-head {
+    line-height: 0.5; 
+}
+
+.sidenav {
+    height: 100vh;
+    width: 2.6vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow-x: inherit;
+}
+
+.sidenav a, .sidenav-open a {
+    padding: 0.6vh 0.2vw;
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: white;
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    border: 1px solid rgba(255,255,255,0.9);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    line-height: 2;
+}
+
+.sidenav-open a:hover, .sidenav a:hover {
+    background: rgba(255,255,255,0.9);
+    color: black;
+    text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sidenav img {
+    margin-top: 40vh;
+    width: 100%;
+    height: 6%;
+}
+
+.sidenav-open img {
+    margin-top: 21vh;
+    width: 25%;
+    height: 6%;
+}
+
+.main img:hover {
+    opacity: 0.75;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.sidenav-open {
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow-x: inherit;
+    display: none;
+    line-height: 2;
+}
+
+body {
+    opacity: 1;
+    transition: 4s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color: black;
+}
+
+::selection {
+    color: black;
+    background: white;
+    text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+
+.about, .work, .contact {
+    display: block;
+    width: 40vw;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.9);
+    padding: 1%;
+    border-radius: 10px; 
+    margin-top: -27.5vh;
+    box-shadow: 0px 0px 50px black;
+    display: none;
+}
+
+h3 {
+    font-size: 2.5vw;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    text-align: center;
+}
+
+hr {
+    width: 32vw;
+    margin-top: -5%;
+}
+
+p {
+    font-family: 'Mallanna', sans-serif;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-indent: 5%;
+    text-align: left;
+    font-size: 1.065vw;
+}
+
+.about img {
+    width: 15%;
+    height: 15%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.images {
+    margin-left: 17.5%;
+    margin-top: 5%;
+}
+
+.work img {
+    width: 15vw;
+    height: 20vh;
+    border: 1px solid white;
+    float: left;
+    margin: 1%;
+}
+
+.work-images {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.work img:hover {
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+.form {
+    font-family: 'Mallanna', sans-serif;
+    color: white;
+    font-size: 1vw;
+    border-radius: 5px;
+    background-color: rgba(24,24,24,0.9);
+    padding: 3%;
+    width: 34vw;
+    height: 65%;
+    margin-left: 4.5%;
+    margin-top: 5%;
+}
+
+input[type=text], select, textarea {
+    font-size: 1vw;
+    width: 34vw;
+    height: 100%;
+    padding: 1%;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    resize: none;
+    box-shadow: 0px 0px 10px black;
+}
+
+input[type=submit] {
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(8,8,8,0.9);
+    color: white;
+}
+
+.tide {
+    transition: color 0.1s ease-in-out;
+}
+
+.tide:hover {
+    color: crimson;
+    text-shadow:
+		-1px -1px 0 grey,
+		1px -1px 0 grey,
+		-1px 1px 0 grey,
+		1px 1px 0 grey;
+}
+
+/**  Audio Player  **/
+
+iframe {
+    border: none;
+    float: right;
+}
+
+@media only screen and (max-width: 685px) and (orientation:portrait) {
+    h1 {
+        font-size: 10vw;
+    }
+    
+    h2 {
+        font-size: 8vw;
+    }
+    
+    .main-head {
+        line-height: 1;
+    }
+    
+    .main {
+        margin-top: 25vh;
+    }
+    
+    .sidenav {
+        width: 7vw;
+    }
+    
+    .sidenav-open {
+        width: 17.5vw;
+    }
+    
+    .sidenav a, .sidenav-open a {
+        font-size: 3vw;
+    }
+    
+    .sidenav-open img {
+        margin-top: 25vh;
+    }
+    
+    .about, .work, .contact {
+        margin-top: -20vh;
+        width: 50vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+    
+    p {
+        font-size: 2.1vw;
+        text-indent: 0;
+        text-align: center;
+    }
+    
+    .about img {
+        width: 25%;
+        height: 25%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .images {
+        margin-left: 7.5%;
+        margin-top: 10%;
+    }
+    
+    .work img {
+        width: 37.5vw;
+        height: 15vh;
+        margin-bottom: 5%;
+    }
+    
+    .work-images {
+        margin-top: 2.5%;
+    }
+    
+    .form {
+        font-size: 2.5vw;
+        margin-left: 12.5%;
+    }
+    
+    input[type=text], select, textarea {
+        font-size: 2vw;
+    }
+    
+    input[type=submit] {
+        margin-top: 5%;
+        padding: 2% 3%;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 1285px), screen and (max-height: 775px) {
+    .bkg {
+        animation: none;
+        background-size: cover;
+    }
+}
