@@ -1,0 +1,300 @@
+@media (min-width: 1850px) {
+    .navbar {
+        margin-top: 15px;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+        border-radius: 7.5px;
+    }
+}
+
+@media (max-width: 1849px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .home-text h1 {
+        font-size: 10vh;
+    }
+    
+    .home-text p {
+        font-size: 5vh;
+    }
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+video {
+    max-width: 70%;
+    max-height: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.5);
+}
+
+body {
+    background: #efefef;
+}
+
+.home-text {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.home-text h1 {
+    font-size: 5vh;
+    text-align: center;
+}
+
+.home-text p {
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+footer {
+    height: 20vh;
+    background: #222222;
+    padding: 1%; 
+}
+
+footer p {
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.footer-images {
+    margin-top: 3vh;
+    text-align: center;
+    letter-spacing: 3vw;
+}
+
+.footer-images img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+}
+
+.footer-images a:hover {
+    opacity: 0.5;
+}
+
+.team {
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.team img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 25vh;
+    width: auto;
+}
+
+.team h2 {
+    font-weight: 700;
+}
+
+.team h4 {
+    font-weight: 600;
+}
+
+@media (min-width: 769px) {
+    .team {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .team h2 {
+        font-size: 40px;
+    }
+    .team h4 {
+        font-size: 26px;
+    }
+    .team p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-text {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+}
+
+.faq {
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.faq h5 {
+    line-height: 125%;
+}
+
+@media (min-width: 769px) {
+    .faq {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .faq p {
+        font-size: 18px;
+    }
+    .faq h5 {
+        font-size: 20px;
+    }
+}
+
+.app {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.app_1 {
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+.app_2 {
+    float: left;
+    width: 25%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+.app_1 img {
+    height: 60vmin;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #000000;
+}
+
+.app_2 img {
+    height: 60vmin;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #000000;
+}
+
+.app p {
+    margin-top: 10%;
+    font-size: 2.5vh;
+}
+
+@media (max-width: 1024px) {
+    .app_2 img {
+        box-shadow: 0px 0px 20px #000000;
+    }
+    .app_1 img {
+        box-shadow: 0px 0px 20px #000000;
+    }
+    .app_2 {
+        float: left;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    .app_1 {
+        float: left;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+}
+
+.app img:hover {
+    height: 80vmin;
+}
+
+.product {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: 1.5;
+}
+.product img {
+    width: 60vmin;;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #222222;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.product h1 {
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.product h3 {
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+.product p {
+    font-size: 2vh;
+}
+
+.product ul {
+    font-size: 2vh;
+}
+
+.product_1 {
+    margin-bottom: 10%;
+}
+
+@media (max-width: 1024px) {
+    .product {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .product img {
+        box-shadow: 0px 0px 20px #222222;
+    }
+    .product ul {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product ul {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 320px) {
+    .product ul {
+        margin-right: 15%;
+    }
+}
