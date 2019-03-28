@@ -1,0 +1,166 @@
+/****** Universal ******/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+/****** Body ******/
+
+body {
+    background-image: url('bkg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 2.5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form {
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 7.5%;
+    width: 55%;
+}
+
+.form1 {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+.form1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.form2 {
+    background: white;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.form3 {
+    background: white;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 55%;
+}
+
+.form3 a {
+    display: inline-block;
+    margin-top: 7.5%;
+    color: darkgray;
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.item {
+    cursor: pointer;
+    font-size: 17px;
+    height: 33%;
+    text-align: center;
+}
+
+span {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+input[type=text] {
+    background: #EEE;
+    border: none;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 90%;
+}
+
+input[type=button] {
+    background: #00ad45;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    margin-top: 2.5%;
+    width: 90%;
+}
+
+.register_here {
+    display: none;
+}
+
+.reset_here {
+    display: none;
+}
+
+.reset_here p {
+    width: 90%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15%;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 37%;
+    width: 50%;
+}
+
+.footer a {  
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.active {
+    background: #00ad45;
+    color: white;
+}
+
+
+
+/****** For Screens smaller than 768px ******/
+
+@media only screen and (max-width: 767px) {
+    
+    
+    
+    
+    
+    
+    
+}
+
+/****** For Screens smaller than 1024px ******/
+
+@media only screen and (max-width: 1023px) {
+    
+    
+    
+    
+    
+    
+}
