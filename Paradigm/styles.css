@@ -1,0 +1,609 @@
+/****** Universal ******/
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #000;
+    color: #49FCD4;
+}
+
+/**
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+**/
+
+
+/****** Body ******/
+
+html, body {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.left {
+    background: #49FCD4;
+}
+
+h1, li, p, input[type=text], textarea, a, span {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2, h3, input[type=button] {
+    font-family: 'Raleway', sans-serif;
+}
+
+.right {
+    background: #fff;
+}
+
+#background {
+    background: #49FCD4;
+    height: 51rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -.175rem;
+    line-height: 4rem;
+    padding: 0.35em;
+    padding-top: 0;
+}
+
+.fa-arrow-down {
+    display: none;
+}
+
+.img1 {
+    margin-left: -57.5%;
+    overflow: hidden;
+    width: 215%;
+}
+
+h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.15rem;
+    line-height: 1.75rem;
+    padding: 1.25em;
+}
+
+p {
+    font-size: 0.925rem;
+    font-weight: 300;
+    letter-spacing: 0.025rem;
+    line-height: 1.85rem;
+    padding: 1.5em;
+    padding-top: 1.75em;
+}
+
+b {
+    font-weight: 600;
+}
+
+.img2 {
+    margin-left: 7%;
+    margin-bottom: 7.5%;
+    width: 86.75%;
+}
+
+.right ul {
+    font-weight: 300;
+    line-height: 4rem;
+    margin-left: 17.5%;
+}
+
+.right ul li {
+    padding-left: 1.75em;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 7%;
+}
+
+.group {
+    margin-left: 7%;
+    margin-bottom: 12.5%;
+}
+
+.img3 {
+    width: 92.5%;
+}
+
+.img4 {
+    width: 45.7%;
+    height: 11.5em;
+    padding: 0.3em 0;
+}
+
+#pleft {
+    padding-left: 0.15em;
+}
+
+#pright {
+    padding-right: 0.15em;
+}
+
+.side {
+    background: #fff;
+}
+
+a {
+    border-bottom: dotted 1px black;
+    color: #000;
+    margin-left: 7%;
+    text-decoration: none;
+}
+
+.address {
+    margin-left: 7%;
+}
+
+form {
+    margin-left: 7%;
+}
+
+.icons a {
+    border: 0;
+    float: left;
+    padding-right: 0.5em;
+}
+
+.icons {
+    list-style-type: none;
+    margin-left: -7%;
+    margin-bottom: 50%;
+    margin-top: 10%;
+}
+
+.button-1, .button-2, .button-3 {
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    height: 4em;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.button-1 {
+    background: #49FCD4;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    width: 86%;
+}
+
+.button-2 {
+    background: #fff;
+    border: 2px solid #E3E3E3;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
+    width: 86%;
+}
+
+.button-2:hover {
+    color: #49FCD4;
+    border: 2px solid #49FCD4;
+}
+
+input[type=text], textarea {
+    border: 2px solid #E3E3E3;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 7.5%;
+    width: 92.5%;
+}
+
+input[type=text] {
+    display: block;
+    height: 3em;
+    padding-left: 5%;
+    padding-right: 5%;
+} 
+
+textarea {
+    height: 15em;
+    line-height: 1.75rem;
+    padding: 5%;
+}
+
+::placeholder {
+    color: #E3E3E3;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #49FCD4;
+    outline: none;
+}
+
+.button-3 {
+    background: #49FCD4;
+    font-size: 0.75rem;
+    margin-bottom: 5%;
+    width: 92.5%;
+}
+
+.bottom {
+    line-height: 2rem;
+}
+
+.bottom a, .bottom span {
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/****** For Screens larger than 768px ******/
+
+@media only screen and (min-width: 768px) {
+    
+html, body {
+    font-size: 125%;
+}    
+
+#background {
+    height: 81rem;    
+}    
+    
+h1 {
+    font-size: 4.65rem;
+    height: 21.25rem;
+    line-height: 5rem;
+    padding: 0.8em;
+    padding-top: 0.5em;
+    word-spacing: 4rem;
+}    
+
+.img1 {
+    margin-left: -31.25%;
+    width: 162.5%;
+}    
+    
+h2 {
+    font-size: 1.15rem;
+    height: 10em;
+    padding: 3.5em 12em 0em 3em;
+}    
+    
+p {
+    font-size: 1rem;
+    padding: 3.75em;
+}    
+    
+.img2 {
+    margin-bottom: 5%;
+    margin-left: 9.5%;
+    width: 81%;
+} 
+    
+.right ul {
+    line-height: 5rem;
+    margin-left: 15%;
+}    
+    
+.right ul li {
+    display: inline-block;
+    font-size: 1.15rem;
+    padding-left: 1.5em;
+    padding-right: 1.75em;
+}    
+    
+.right ul li:nth-child(even) {
+    float: right;
+}    
+  
+#id1 {
+    margin-right: 17.5%;    
+}
+    
+#id2 {
+    margin-right: 10%;    
+}    
+    
+#id3 {
+    margin-right: 11.75%;    
+}    
+    
+h3 {
+    font-size: 1rem;
+    margin-left: 10%;
+}
+    
+.group {
+    margin-left: 9.5%;
+    margin-bottom: 12.5%;
+}
+
+.img3 {
+    width: 90%;
+}
+
+.img4 {
+    width: 44.5%;
+    height: 16.25em;
+    padding: 0.75em 0;
+}
+    
+#pleft {
+    padding-left: 0.375em;
+}
+
+#pright {
+    padding-right: 0.375em;
+}    
+ 
+.button-1, .button-2 {
+    height: 5em;
+    margin-left: 10%;
+    width: 30%;
+}    
+    
+.button-2 {
+    margin-left: 2.5%;
+}    
+    
+.button-3 {
+    width: 30%;
+}    
+    
+form {
+    margin-left: 10%;
+}    
+    
+input[type=text] {
+    display: inline;
+    height: 3em;
+    margin-right: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 42.5%;
+} 
+
+textarea {
+    width: 90%;
+}    
+
+a {
+    margin-left: 10%;
+}
+
+.address {
+    margin-left: 10%;
+}    
+    
+.icons a {
+    padding-right: 0;
+}
+
+.icons {
+    margin-left: -5%;
+    margin-bottom: 40%;
+    margin-top: 5%;
+}    
+
+.bottom {
+    line-height: 2.75rem;
+}    
+    
+}
+
+/****** For Screens larger than 1024px ******/
+
+@media only screen and (min-width: 1024px) {
+    
+html, body {
+    font-size: 150%;
+}       
+    
+.left {
+    float: left;
+    text-align: right;
+    width: 51vw;
+}    
+
+.right {
+    float: right;
+    width: 49vw;
+}    
+    
+.side {
+    background: #49FCD4;    
+}    
+
+.head {
+    margin-left: -10%;
+}    
+    
+h1 {
+    font-size: 3.6rem;
+    height: auto;
+    letter-spacing: -.185rem;
+    line-height: 3.95rem;
+    padding-left: 6em;
+    padding-right: 0;
+    padding-top: 2.44em;
+    position: relative;
+    word-spacing: normal;
+    z-index: 2;
+}
+
+.fa-arrow-down {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding-top: 0.15em;
+    position: relative;
+    z-index: 2;
+}
+
+.img1 {
+    height: 100vh;
+    margin-left: -10%;
+    width: 121.25%;
+}   
+    
+#background {
+    height: 100vh;
+    width: 50vw;
+    z-index: 1;
+}    
+  
+h2 {
+    font-size: 0.9rem;
+    height: 10em;
+    line-height: 1.5rem;
+    padding: 5em 9em 0 21em;    
+}    
+    
+p {
+    font-size: 0.7rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.35rem;
+    padding: 3.75em 5em;
+}    
+    
+.img2 {
+    margin-left: 9%;
+    width: 83.5%;
+}         
+
+.right ul {
+    line-height: 3rem;
+}    
+    
+.right ul li {
+    font-size: 0.75rem;
+    padding-left: 1.5em;
+    padding-right: 5em;
+}      
+    
+#id1 {
+    margin-right: 22.5%;    
+}
+    
+#id2 {
+    margin-right: 17.5%;    
+}    
+    
+#id3 {
+    margin-right: 18.5%;    
+}     
+    
+h3 {
+    font-size: 0.75rem;
+    margin-left: 0;
+    margin-right: 20%;
+}    
+    
+.side p {
+    padding-left: 30em;
+    padding-right: 11.5em;    
+}        
+    
+.group {
+    margin-left: 0;
+    padding-left: 7.5%;
+    margin-bottom: 12.5%;
+}
+
+.img3 {
+    width: 82.5%;
+}
+
+.img4 {
+    width: 40.75%;
+    height: 13.5em;
+    padding: 0.35em 0;
+}
+    
+#pleft {
+    padding-left: 0.2em;
+}
+
+#pright {
+    padding-right: 0.2em;
+}    
+ 
+.button-1, .button-2 {
+    height: 4.5em;
+    margin-left: 8.5%;
+    width: 25%;
+}    
+    
+.button-2 {
+    margin-left: 1%;
+}    
+    
+.button-3 {
+    font-size: 0.5rem;
+    height: 4.75em;
+    width: 20%;
+}    
+    
+form {
+    margin-left: 9%;
+}    
+
+input[type=text], textarea {
+    margin-bottom: 4%;
+}    
+    
+input[type=text] {
+    display: inline;
+    font-size: 0.8rem;
+    height: 2.5em;
+    margin-right: 2.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 44%;
+} 
+
+textarea {
+    font-size: 0.8rem;
+    height: 14em;
+    line-height: 1.75rem;
+    padding: 2%;
+    padding-top: 1%;
+    width: 92%;
+}    
+
+a {
+    margin-left: 6%;
+}            
+
+.bottom span {
+    margin-right: 19.5%;
+}    
+ 
+.bottom a {
+    margin-right: 19.5%;    
+}    
+    
+.icons a {
+    font-size: 0.9rem;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.icons {
+    margin-left: 45%;
+    margin-bottom: 30%;
+    margin-top: 0;
+}    
+
+.bottom {
+    line-height: 2rem;
+}       
+    
+}
